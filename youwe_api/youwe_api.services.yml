@@ -1,0 +1,10 @@
+services:
+  youwe_beer_client:
+    class: Drupal\youwe_api\BeerClient
+    arguments:
+      - '@http_client_factory'
+
+  youwe_cat_client:
+    class: Drupal\youwe_api\CatClient
+    arguments:
+      - '@http_client_factory'  
