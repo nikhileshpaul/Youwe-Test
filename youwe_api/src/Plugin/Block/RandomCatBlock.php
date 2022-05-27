@@ -54,7 +54,7 @@ class RandomCatBlock extends BlockBase implements ContainerFactoryPluginInterfac
     $return_html = '<div class="random_cat">';
 
     foreach ($cats as $cat) {
-      $return_html .= '<img src="' . $cat['url'] . '" width="200" height="200">';
+      $return_html .= '<img src="' . $cat['url'] . '" loading="lazy" width="200" height="200">';
     }
 
     $return_html .= '</div>';

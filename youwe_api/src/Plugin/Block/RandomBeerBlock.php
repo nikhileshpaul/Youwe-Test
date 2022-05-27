@@ -65,7 +65,7 @@ class RandomBeerBlock extends BlockBase implements ContainerFactoryPluginInterfa
                             <td>' . $beer['name']  . '</td>
                             <td>' . $beer['tagline']  . '</td>
                             <td>' . $beer['abv']  . '</td>
-                            <td><img src="' . $beer['image_url'] . '" width="30" height="30"></td>
+                            <td><img src="' . $beer['image_url'] . '" loading="lazy" width="30" height="30"></td>
                           </tr>';
     }
     $resultmarkup .= '</table>
