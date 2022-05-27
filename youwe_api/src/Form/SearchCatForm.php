@@ -55,17 +55,11 @@ class SearchCatForm extends FormBase {
         $breed_ids[$breed['id']] = $breed['name'];
     }
 
-    $form['message'] = [
-        '#type' => 'markup',
-        '#markup' => '<div class="cat_message"></div>',
-    ];
-
     $form['breed'] = [
         '#type' => 'select',
         '#title' => $this->t('Breeds'),
         '#options' => $breed_ids,
     ];
-  
 
     $form['actions']['submit'] = array(
       '#type' => 'submit',
@@ -75,6 +69,11 @@ class SearchCatForm extends FormBase {
       ],
     );
 
+    $form['message'] = [
+        '#type' => 'markup',
+        '#markup' => '<div class="cat_message"></div>',
+    ];
+    
     return $form;
   }
 

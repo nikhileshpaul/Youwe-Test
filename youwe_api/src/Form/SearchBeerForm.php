@@ -49,11 +49,6 @@ class SearchBeerForm extends FormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
 
-    $form['message'] = [
-        '#type' => 'markup',
-        '#markup' => '<div class="result_message"></div>',
-    ];
-
     $form['food'] = array(
       '#type' => 'textfield',
       '#title' => t('Food Name:'),
@@ -67,6 +62,11 @@ class SearchBeerForm extends FormBase {
         'callback' => '::showBeers',
       ],
     );
+
+    $form['message'] = [
+        '#type' => 'markup',
+        '#markup' => '<div class="result_message"></div>',
+    ];
 
     return $form;
   }
