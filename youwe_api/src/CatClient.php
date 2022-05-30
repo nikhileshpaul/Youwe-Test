@@ -38,9 +38,7 @@ class CatClient {
   }
 
   /**
-   * Get cat based on breed.
-   *
-   * @param string $breed
+   * Get all breeds.
    *
    * @return array
    */
@@ -53,7 +51,7 @@ class CatClient {
   /**
    * Get cat based on breed.
    *
-   * @param string $breed
+   * @param string $breed_id
    *
    * @return array
    */
